@@ -1,0 +1,17 @@
+.side-bar {
+    background: var(--bg-light);
+    height: 100vh;
+    width: 250px;
+}
+
+.side-bar h2 {
+    background: #f00;
+}
+
+.side-bar nav ul {
+    list-style: none;
+}
+
+.side-bar nav ul li {
+    background: #fcc;
+}
