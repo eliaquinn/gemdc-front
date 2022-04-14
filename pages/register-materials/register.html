@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEMDC</title>
-    <link rel="stylesheet" href="./css/dashboard.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>GEMDC | Cadastrar</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="./register.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <aside class="side-bar">
-        <h2><a href="./index.html">GEMDC</a></h2>
+        <h2><a href="../../index.html">GEMDC</a></h2>
         <nav>
             <ul>
                 <li>
-                    <a href="./index.html">
+                    <a href="./../../index.html">
                         <i class='bx bxs-dashboard'></i> Painel de controle
                     </a>
                 </li>
@@ -27,7 +27,7 @@
                     <a><i class='bx bxs-package' ></i> Materiais
                     </a>
                     <ul id="sub-menu-materials">
-                        <li><a href="./pages/register-materials/register.html">Cadastrar</a></li>
+                        <li><a href="./register.html">Cadastrar</a></li>
                         <li><a href="#">Estoque</a></li>
                         <li><a href="#">Editar</a></li>
                     </ul>
@@ -46,7 +46,7 @@
 
     <div class="container">
         <div class="appbar">
-            <h2>Painel de controle</h2>
+            <h2>Materiais</h2>
             <div class="btns-users">
                 <div class="search">
                     <input type="search" placeholder="pesquisar">
@@ -56,46 +56,39 @@
             </div>
         </div>
 
-        <div class="statuses">
-            <div class="material-output">
-                <div class="title">
-                    <i class='bx bx-box'></i>
-                    <h3>Saída de materiais (13/04/2022)</h3>
-                </div>
-                <div class="status">
-                    <h2>38</h2>
-                    <div class="late">
-                        <span>48</span>
-                        <p>Ontem</p>
-                    </div>
-                </div>
+        <div class="register">
+            <div class="codigo">
+                <label>Codigo:</label>
+                <input type="text">
             </div>
 
-            <div class="balance-general">
-                <div class="title">
-                    <i class='bx bxl-deezer'></i>
-                    <h3>Saldo geral do estoque</h3>
-                </div>
-                <div class="status">
-                    <h2>4.889</h2>
-                </div>
+            <div class="desc">
+                <label>Descrição:</label>
+                <input type="text">
             </div>
 
-            <div class="higher-output">
-                <div class="title">
-                    <i class='bx bx-archive-out'></i>
-                    <h3>Maiores saídas (13/04/2022)</h3>
-                </div>
-                <div class="outputs">
-                    <ul>
-                        <li>38 | Chapa de aço 20x50x3</li>
-                        <li>38 | Pincel de 3</li>
-                    </ul>
-                </div>
+            <div class="lanc">
+                <label>Lançamento:</label>
+                <input type="text">
+            </div>
+
+            <div class="tmedida">
+                <label>Un. medida:</label>
+                <input type="text">
+            </div>
+
+            <div class="estoque">
+                <label>Estoque:</label>
+                <input type="text">
+            </div>
+
+            <div class="local">
+                <label>Localização:</label>
+                <input type="text">
             </div>
         </div>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 </html>
