@@ -1,5 +1,5 @@
 .side-bar {
-    background: var(--bg-light);
+    background: linear-gradient(135deg, var(--bg-light), var(--clr-deep));
     height: 100vh;
     width: 250px;
     padding: 5px;
@@ -34,57 +34,168 @@
 .side-bar nav ul li a {
     text-decoration: none;
     font-size: 14pt;
-    color: #fff;
+    color: var(--clr-light);
 }
 
-.appbar {
+.container {
+    width: calc(100vw - 250px);
+}
+
+.container .appbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 80px;
     height: 100px;
-    width: 85%;
 }
 
-.appbar h2 {
+.container .appbar h2 {
     color: var(--clr-deep);
     font-size: 18pt;
-    font-weight: 300;
+    font-weight: 400;
 }
 
-.appbar .btns-users {
+.container .appbar .btns-users {
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 35%;
     height: 35px;
 }
 
-.appbar .btns-users .search {
+.container .appbar .btns-users .search {
     display: flex;
     align-items: center;
-    height: 30px;
+    height: 40px;
     width: 85%;
     border-radius: 5px;
-    /* background: var(--clr-deep2);s */
-    border: 1px solid var(--clr-deep2);
-    margin-right: 10px;
+    border: 1px solid var(--clr-light);
+    margin-right: 20px;
+    transition: .3s ease;
 }
 
-.appbar .btns-users .search input {
+.container .appbar .btns-users .search input {
     width: 90%;
-    height: 30px;
+    height: 40px;
     border: none;
     outline: none;
     background: transparent;
+    padding: 0 10px;
+    font-size: 12pt;
+    font-weight: 200;
+    font-style: italic;
 }
 
-.appbar .btns-users .search i {
+.container .appbar .btns-users .search i {
     font-size: 16pt;
     color: var(--clr-dark);
 }
 
-.appbar .btns-users .btn-login {
-    width: 30px;
-    height: 30px;
+.container .appbar .btns-users .btn-login {
+    width: 40px;
+    height: 40px;
     border-radius: 25px;
-    background: var(--clr-dark);
+    border: 2px solid var(--clr-on);
+}
+
+.container .statuses {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    margin: 0 80px;
+}
+
+.container .statuses .material-output {
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .221);
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .statuses .material-output .title {
+    display: flex;
+    align-items: center;
+}
+
+.container .statuses .material-output .status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .statuses .material-output .status h2 {
+    font-size: 28pt;
+}
+
+.container .statuses .material-output .status .late {
+    display: flex;
+}
+
+.container .statuses .material-output .status .late span {
+    font-size: 16pt;
+    margin-right: 10px;
+}
+
+.container .statuses .material-output .title h3 {
+    font-size: 12pt;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.container .statuses .balance-general {
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .221);
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .statuses .balance-general .title {
+    display: flex;
+    align-items: center;
+}
+
+.container .statuses .balance-general .status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .statuses .balance-general .status h2 {
+    font-size: 28pt;
+}
+
+.container .statuses .balance-general .title h3 {
+    font-size: 12pt;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.container .statuses .higher-output {
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .221);
+    width: 380px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .statuses .higher-output h3 {
+    font-size: 12pt;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.container .statuses .higher-output .title {
+    display: flex;
+    align-items: center;
+}
+
+.container .statuses .higher-output .outputs {
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.container .statuses .higher-output .outputs ul {
+    list-style: circle;
+    padding: 0 15px;
 }

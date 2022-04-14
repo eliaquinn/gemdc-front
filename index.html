@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +9,85 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="side-bar">
+    <aside class="side-bar">
         <h2>GEMDC</h2>
         <nav>
             <ul>
-                <li><a href="#"><i class='bx bxs-dashboard'></i> Painel de controle</a></li>
-                <li><a href="#"><i class='bx bx-scatter-chart'></i> Retirada</a></li>
-                <li><a href="#"><i class='bx bxs-package' ></i> Materiais</a></li>
-                <li><a href="#"><i class='bx bx-clipboard' ></i> Relatórios</a></li>
-                <li><a href="#"><i class='bx bxs-cog' ></i> Gestão</a></li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-dashboard'></i> Painel de controle
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-scatter-chart'></i> Retirada
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bxs-package' ></i> Materiais
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-clipboard' ></i> Relatórios
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bxs-cog' ></i> Gestão
+                    </a>
+                </li>
             </ul>
         </nav>
-    </header>
-    <header class="appbar">
-        <h2>Painel de Controle</h2>
-        <div class="btns-users">
-            <div class="search">
-                <input type="text">
-                <i class='bx bx-search-alt-2' ></i>
+    </aside>
+    <div class="container">
+        <div class="appbar">
+            <h2>Painel de controle</h2>
+            <div class="btns-users">
+                <div class="search">
+                    <input type="search" placeholder="pesquisar">
+                    <i class='bx bx-search-alt-2' ></i>
+                </div>
+                <div class="btn-login"></div>
             </div>
-            <div class="btn-login"></div>
         </div>
-    </header>
+
+        <div class="statuses">
+            <div class="material-output">
+                <div class="title">
+                    <i class='bx bx-box'></i>
+                    <h3>Saída de materiais (13/04/2022)</h3>
+                </div>
+                <div class="status">
+                    <h2>38</h2>
+                    <div class="late">
+                        <span>48</span>
+                        <p>Ontem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="balance-general">
+                <div class="title">
+                    <i class='bx bxl-deezer'></i>
+                    <h3>Saldo geral do estoque</h3>
+                </div>
+                <div class="status">
+                    <h2>4.889</h2>
+                </div>
+            </div>
+
+            <div class="higher-output">
+                <div class="title">
+                    <i class='bx bx-archive-out'></i>
+                    <h3>Maiores saídas (13/04/2022)</h3>
+                </div>
+                <div class="outputs">
+                    <ul>
+                        <li>38 | Chapa de aço 20x50x3</li>
+                        <li>38 | Pincel de 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
