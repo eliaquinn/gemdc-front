@@ -43,6 +43,11 @@ body {
     list-style: none;
 }
 
+.side-bar nav ul li:nth-child(3):hover > ul {
+    display: block;
+    position: static;
+}
+
 .side-bar nav ul li {
     background: var(--clr-none);
     margin: 10px;
@@ -50,11 +55,6 @@ body {
     border: 1px solid var(--clr-none);
     border-radius: 5px;
     cursor: pointer;
-    transition: .3s ease;
-}
-
-.side-bar nav ul li:nth-child(3) ul {
-    display: none;
     transition: .3s ease;
 }
 
