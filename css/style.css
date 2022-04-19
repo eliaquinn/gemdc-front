@@ -43,7 +43,9 @@ body {
     list-style: none;
 }
 
-.side-bar nav ul .output-materials:nth-child(2) {
+/* função dropdown não consegui suaviza-la */
+
+/* .side-bar nav ul .output-materials:nth-child(2) {
     height: 40px;
     overflow: hidden;
 }
@@ -51,7 +53,7 @@ body {
 .side-bar nav ul .output-materials:nth-child(2):hover {
     height: 100%;
     overflow: none;
-}
+} */
 
 .side-bar nav ul .output-materials ul li a{
     font-size: 13pt;
@@ -73,15 +75,17 @@ body {
     transition: .2s ease;
 }
 
-.side-bar nav ul .materials:nth-child(3) {
+/* função dropdown porém ainda não consegui suavizar */
+
+/* .side-bar nav ul .materials:nth-child(3) {
     height: 40px;
     overflow: hidden;
-}
+} */
 
-.side-bar nav ul .materials:nth-child(3):hover {
+/* .side-bar nav ul .materials:nth-child(3):hover {
     height: 100%;
     overflow: none;
-}
+} */
 
 .side-bar nav ul li:nth-child(3) ul li {
     font-weight: 200;
@@ -137,7 +141,7 @@ body {
     height: 40px;
     width: 85%;
     border-radius: 5px;
-    border: 1px solid var(--clr-light);
+    border: 1px solid #ccc;
     margin-right: 20px;
     transition: .3s ease;
 }
@@ -152,10 +156,6 @@ body {
     font-size: 12pt;
     font-weight: 200;
     font-style: italic;
-}
-
-.appbar .btns-users .search {
-    border: 1px solid var(--clr-deep2);
 }
 
 .appbar .btns-users .search i {
