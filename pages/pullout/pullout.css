@@ -62,6 +62,10 @@
 }
 
 .pullout-list table tbody tr:nth-child(even) {
+    background: #d3eaff;
+}
+
+.pullout-list table tbody tr:hover {
     background: #8bc7ff;
 }
 
