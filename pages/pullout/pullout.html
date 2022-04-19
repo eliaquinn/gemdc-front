@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEMDC | Retirada</title>
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="./pullout.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -51,7 +51,7 @@
 
     <div class="container">
         <div class="appbar">
-            <h2>Materiais</h2>
+            <h2>Retirada</h2>
             <div class="btns-users">
                 <div class="search">
                     <input type="search" placeholder="pesquisar">
@@ -61,50 +61,68 @@
             </div>
         </div>
 
-        <div class="register">
-            <div class="group">
-                <div class="codigo">
-                    <label>Codigo:</label>
-                    <input type="text">
-                </div>
-    
-                <div class="lanc">
-                    <label>Lançamento:</label>
+        <div class="status-pullout-general">
+            <div class="detail-pullout">
+                <div>
+                    <label>Data:</label>
                     <input type="date">
                 </div>
-            </div>
-
-            <div class="desc">
-                <label>Descrição:</label>
-                <input type="text">
-            </div>
-
-            <div class="group">
-                <div class="local">
-                    <label>Localização:</label>
-                    <input type="text">
-                </div>
-    
-                <div class="tmedida">
-                    <label>Un. medida:</label>
-                    <!-- <input type="text"> -->
-                    <select name="tmedida" id="tmedida">
-                        <option value="null">Selecione</option>
-                        <option value="unidade">Unidade</option>
-                        <option value="galao">Galão</option>
-                        <option value="centena">Centena</option>
-                        <option value="metro">Metro</option>
-                        <option value="peca">Peça</option>
-                    </select>
-                </div>
-    
-                <div class="estoque">
-                    <label>Estoque:</label>
+                <div>
+                    <label>Requisitante:</label>
                     <input type="text">
                 </div>
             </div>
-            <button class="btn-reg-materials">Salvar</button>
-            <button class="btn-reg-materials">Limpar</button>
+
+            <div class="search-bar-pullout">
+                <button>Adicionar</button>
+                <button>Finalizar</button>
+            </div>
+            
+            <div class="pullout-list">
+                <table>
+                    <thead>
+                        <th>Codigo</th>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Gestão</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>035100198</td>
+                            <td>Tampa Lateral Direita Eletrônico</td>
+                            <td>
+                                <span>10</span>
+                                <i class='bx bxs-edit'></i>
+                            </td>
+                            <td>
+                                <span><i class='bx bx-trash'></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>035100198</td>
+                            <td>Tampa Lateral Direita Eletrônico</td>
+                            <td>
+                                <span>10</span>
+                                <i class='bx bxs-edit'></i>
+                            </td>
+                            <td>
+                                <span><i class='bx bx-trash'></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>035100198</td>
+                            <td>Tampa Lateral Direita Eletrônico</td>
+                            <td>
+                                <span>10</span>
+                                <i class='bx bxs-edit'></i>
+                            </td>
+                            <td>
+                                <span><i class='bx bx-trash'></i></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
