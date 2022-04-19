@@ -43,9 +43,20 @@ body {
     list-style: none;
 }
 
-.side-bar nav ul li:nth-child(3):hover > ul {
-    display: block;
-    position: static;
+.side-bar nav ul .output-materials:nth-child(2) {
+    height: 40px;
+    overflow: hidden;
+}
+
+.side-bar nav ul .output-materials:nth-child(2):hover {
+    height: 100%;
+    overflow: none;
+}
+
+.side-bar nav ul li:nth-child(2) ul li {
+    color: #fff;
+    font-weight: 200;
+    transition: .3s ease;
 }
 
 .side-bar nav ul li {
@@ -55,13 +66,21 @@ body {
     border: 1px solid var(--clr-none);
     border-radius: 5px;
     cursor: pointer;
-    transition: .3s ease;
+    transition: .2s ease;
+}
+
+.side-bar nav ul .materials:nth-child(3) {
+    height: 40px;
+    overflow: hidden;
+}
+
+.side-bar nav ul .materials:nth-child(3):hover {
+    height: 100%;
+    overflow: none;
 }
 
 .side-bar nav ul li:nth-child(3) ul li {
-    color: #fff;
     font-weight: 200;
-    transition: .3s ease;
 }
 
 .side-bar nav ul li:nth-child(3) ul li a {

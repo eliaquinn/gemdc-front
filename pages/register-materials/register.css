@@ -1,33 +1,84 @@
 .register {
     height: calc(100vh - 100px);
     margin: 0 80px;
-    width: 500px;
+    width: 50vw;
+}
+
+.register .group {
+    display: flex;
 }
 
 .register div label {
     display: block;
 }
 
+.register div input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14pt;
+    outline: none;
+}
+
+.register div input:focus {
+    outline: 1px solid var(--bg-light);
+}
+
 .register .codigo {
-    background: #f00;
+    width: 280px;
+    margin-right: 5px;
 }
 
 .register .desc {
-    background: #f00;
+    margin-top: 5px;
 }
 
 .register .lanc {
-    background: #f00;
+    width: 200px;
 }
 
 .register .tmedida {
-    background: #f00;
+    width: 250px;
+    margin: 5px;
+}
+
+.register .tmedida select {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: 300;
+    outline: none;
+}
+
+.register .tmedida select:focus {
+    outline: 1px solid var(--bg-light);
 }
 
 .register .estoque {
-    background: #f00;
+    margin: 5px 0;
 }
 
 .register .local {
-    background: #f00;
+    margin: 5px 0;
+}
+
+.btn-reg-materials {
+    height: 35px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12pt;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.btn-reg-materials:hover {
+    background: #90cbff;
+    outline: 1px solid var(--bg-light);
 }
