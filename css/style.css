@@ -53,6 +53,10 @@ body {
     overflow: none;
 }
 
+.side-bar nav ul .output-materials ul li a{
+    font-size: 13pt;
+}
+
 .side-bar nav ul li:nth-child(2) ul li {
     color: #fff;
     font-weight: 200;

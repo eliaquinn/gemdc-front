@@ -11,6 +11,13 @@
     width: 300px;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid transparent;
+    transition: .3s ease;
+}
+
+.container .statuses .material-output:hover {
+    border: 1px solid var(--bg-light);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.564);
 }
 
 .container .statuses .material-output .title {
@@ -26,6 +33,7 @@
 
 .container .statuses .material-output .status h2 {
     font-size: 28pt;
+    font-weight: 300;
 }
 
 .container .statuses .material-output .status .late {
@@ -49,6 +57,13 @@
     width: 250px;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid transparent;
+    transition: .3s ease;
+}
+
+.container .statuses .balance-general:hover {
+    border: 1px solid var(--bg-light);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.564);
 }
 
 .container .statuses .balance-general .title {
@@ -64,6 +79,7 @@
 
 .container .statuses .balance-general .status h2 {
     font-size: 28pt;
+    font-weight: 300;
 }
 
 .container .statuses .balance-general .title h3 {
@@ -78,6 +94,13 @@
     width: 380px;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid transparent;
+    transition: .3s ease;
+}
+
+.container .statuses .higher-output:hover {
+    border: 1px solid var(--bg-light);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.564);
 }
 
 .container .statuses .higher-output h3 {
