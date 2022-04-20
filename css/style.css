@@ -9,6 +9,8 @@
     --clr-none: transparent;
     --clr-dark: #333;
     --clr-on: #4ef56a;
+    --clr-error: #ff8484;
+    --clr-error-border: #bb2d2d;
 }
 
 * {

@@ -15,16 +15,31 @@ body {
 
 .login h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 20pt;
     font-weight: 500;
 }
 
 .login h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: 300;
     font-size: 16pt;
+}
+
+.login .message {
+    display: none;
+    background: var(--clr-error);
+    padding: 5px;
+    border: 1px solid var(--clr-error-border);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.login .show { /* MENSSAGEM DE ERRO DO LOGIN */
+    display: block;
 }
 
 .login span {
@@ -47,26 +62,32 @@ body {
     border: 1px solid var(--bg-light);
 }
 
+.login .forgot-pwd {
+    margin-top: -30px;
+    font-size: 11pt;
+}
+
 .login #vision-passwd {
     color: #8a8a8a;
     font-size: 18pt;
     position: relative;
     left: 325px;
+    width: 25px;
     top: -40px;
     cursor: pointer;
 }
 
-.login #forgot-pass {
+.login .forgot-pwd {
     text-align: right;
 }
 
-.login #forgot-pass a {
+.login .forgot-pwd a {
     text-decoration: none;
     font-weight: 600;
     color: var(--clr-deep2);
 }
 
-.login #forgot-pass a:hover {
+.login .forgot-pwd a:hover {
     text-decoration: underline;
 }
 
@@ -87,16 +108,17 @@ body {
     border: 1px solid var(--bg-light);
 }
 
-.login #signup {
+.login .signup-user {
+    /* display: none; REMOVER DEPOIS*/
     margin-top: 20px;
 }
 
-.login #signup a {
+.login .signup-user a {
     text-decoration: none;
     font-weight: 600;
     color: var(--clr-deep2);
 }
 
-.login #signup a:hover {
+.login .signup-user a:hover {
     text-decoration: underline;
 }
