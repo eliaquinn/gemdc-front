@@ -17,6 +17,7 @@
     cursor: pointer;
     font-size: 12pt;
     font-weight: 300;
+    background: #fff;
 }
 
 .search-bar .btn-reg-materials:hover {
@@ -62,6 +63,7 @@
 
 .result-search table {
     width: 100%;
+    background: #fff;
 }
 
 .result-search table thead {

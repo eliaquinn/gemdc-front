@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEMDC | Cadastrar</title>
+    <title>GEMDC</title>
+    <link rel="stylesheet" href="./dashboard.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="./register.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -32,7 +32,7 @@
                     <a><i class='bx bxs-package' ></i> Materiais
                     </a>
                     <ul class="sub-menu">
-                        <li><a href="./register.html">Cadastrar</a></li>
+                        <li><a href="../register-materials/register.html">Cadastrar</a></li>
                         <li><a href="../renew-stock/renew-stoke.html">Estoque</a></li>
                     </ul>
                 </li>
@@ -51,7 +51,7 @@
 
     <div class="container">
         <div class="appbar">
-            <h2>Materiais > Cadastrar</h2>
+            <h2>Painel de controle</h2>
             <div class="btns-users">
                 <div class="search">
                     <input type="search" placeholder="pesquisar">
@@ -61,53 +61,46 @@
             </div>
         </div>
 
-        <div class="register">
-            <div class="group">
-                <div class="codigo">
-                    <label>Codigo:</label>
-                    <input type="text">
+        <div class="statuses">
+            <div class="material-output">
+                <div class="title">
+                    <i class='bx bx-box'></i>
+                    <h3>Saída total (13/04/2022)</h3>
                 </div>
-    
-                <div class="lanc">
-                    <label>Lançamento:</label>
-                    <input type="date">
+                <div class="status">
+                    <h2>38</h2>
+                    <div class="late">
+                        <span>/48</span>
+                        <p>Ontem</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="desc">
-                <label>Descrição:</label>
-                <input type="text">
+            <div class="balance-general">
+                <div class="title">
+                    <i class='bx bxl-deezer'></i>
+                    <h3>Saldo total do Estoque</h3>
+                </div>
+                <div class="status">
+                    <h2>4.889</h2>
+                </div>
             </div>
 
-            <div class="group">
-                <div class="local">
-                    <label>Localização:</label>
-                    <input type="text">
+            <div class="higher-output">
+                <div class="title">
+                    <i class='bx bx-archive-out'></i>
+                    <h3>Maiores saídas (13/04/2022)</h3>
                 </div>
-    
-                <div class="tmedida">
-                    <label>Un. medida:</label>
-                    <!-- <input type="text"> -->
-                    <select name="tmedida" id="tmedida">
-                        <option value="null">Selecione</option>
-                        <option value="unidade">Unidade</option>
-                        <option value="galao">Galão</option>
-                        <option value="centena">Centena</option>
-                        <option value="metro">Metro</option>
-                        <option value="peca">Peça</option>
-                    </select>
-                </div>
-    
-                <div class="estoque">
-                    <label>Estoque:</label>
-                    <input type="text">
+                <div class="outputs">
+                    <ul>
+                        <li>38 | Chapa de aço 20x50x3</li>
+                        <li>38 | Pincel de 3</li>
+                    </ul>
                 </div>
             </div>
-            <button class="btn-reg-materials">Salvar</button>
-            <button class="btn-reg-materials">Limpar</button>
         </div>
     </div>
 
-    <script src="../../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

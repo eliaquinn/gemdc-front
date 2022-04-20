@@ -1,0 +1,102 @@
+body {
+    background: var(--bg-default);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin: 100px auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .123);
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+.login h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+.login span {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 13pt;
+}
+
+.login input {
+    margin-bottom: 10px;
+    height: 40px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 14pt;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login input:focus {
+    border: 1px solid var(--bg-light);
+}
+
+.login #vision-passwd {
+    color: #8a8a8a;
+    font-size: 18pt;
+    position: relative;
+    left: 325px;
+    top: -40px;
+    cursor: pointer;
+}
+
+.login #forgot-pass {
+    text-align: right;
+}
+
+.login #forgot-pass a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-deep2);
+}
+
+.login #forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+.login button {
+    background: var(--bg-light);
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--clr-deep);
+    color: #fff;
+    font-size: 14pt;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login button:active {
+    background: var(--clr-deep);
+    border: 1px solid var(--bg-light);
+}
+
+.login #signup {
+    margin-top: 20px;
+}
+
+.login #signup a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-deep2);
+}
+
+.login #signup a:hover {
+    text-decoration: underline;
+}
