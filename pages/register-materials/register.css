@@ -40,7 +40,7 @@
 }
 
 .register .tmedida {
-    width: 250px;
+    width: 33vw;
     margin: 5px;
 }
 
@@ -60,10 +60,12 @@
 }
 
 .register .estoque {
+    width: 33vw;
     margin: 5px 0;
 }
 
 .register .local {
+    width: 33vw;
     margin: 5px 0;
 }
 

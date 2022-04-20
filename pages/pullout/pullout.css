@@ -22,6 +22,14 @@
     outline: none;
 }
 
+.detail-pullout div input:focus {
+    outline: 1px solid var(--bg-light);
+}
+
+.detail-pullout div:nth-child(2) label {
+    margin-left: 5px;
+}
+
 .detail-pullout div:nth-child(2) input {
     width: 40vw;
     margin-left: 5px;

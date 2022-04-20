@@ -15,22 +15,17 @@ class DocumentSettings {
             if(item.classList.value == 'btn-login') {
                 item.onclick = () => {
                     menuUser.innerHTML = ''
-
                     if(menuUser.style.display === 'block') {
                         menuUser.style.display = ''
                         return
                     }
-
                     menuUser.style.display = 'block'
-
                     let ul = document.createElement('ul')
-                    
                     ul.innerHTML = `
-                    <li>Perfil</li>
-                    <li>Configurações</li>
-                    <li>Sair</li>
+                        <li>Perfil</li>
+                        <li>Configurações</li>
+                        <li>Sair</li>
                     `
-
                     menuUser.appendChild(ul)
                 }
             }

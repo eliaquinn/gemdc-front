@@ -189,6 +189,7 @@ body {
     border-radius: 25px;
     border: 2px solid var(--clr-on);
     cursor: pointer;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .appbar .btns-users .btn-login img {
