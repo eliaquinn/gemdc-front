@@ -10,11 +10,11 @@
 </head>
 <body>
     <aside class="side-bar">
-        <h2><a href="../../pages/dashboard/dashboard.html">GEMDC</a></h2>
+        <h2><a href="../dashboard/dashboard.html">GEMDC</a></h2>
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="../../pages/dashboard/dashboard.html">
+                    <a href="../dashboard/dashboard.html">
                         <i class='bx bxs-dashboard'></i> Painel de controle
                     </a>
                 </li>
@@ -38,7 +38,7 @@
                 </li>
 
                 <li>
-                    <a href="./reports-lists.html"><i class='bx bx-clipboard' ></i> Relatórios
+                    <a href="../reports-lists/reports-lists.html"><i class='bx bx-clipboard' ></i> Relatórios
                     </a>
                 </li>
                 <li>
@@ -60,13 +60,59 @@
                     <i class='bx bx-search-alt-2' ></i>
                 </div>
                 <div class="btn-login">
-                    <img src="../../assets//imgs/2x.png" alt="">
+                    <img class="btn-login" src="../../assets//imgs/2x.png" alt="">
                 </div>
             </div>
         </div>
 
         <div class="report-field">
-            relatórios
+            <div class="search">
+                <div class="code">
+                    <label>Codigo:</label>
+                    <input type="text">
+                </div>
+                <div class="desc">
+                    <label>Descrição:</label>
+                    <input type="text">
+                </div>
+                <div class="data-espec">
+                    <label>Data:</label>
+                    <input type="date">
+                </div>
+                <button>Pesquisar</button>
+            </div>
+            <div class="result-reports">
+                <div class="item">
+                    <div class="header-item">
+                        <span>Codigo</span>
+                        <span>Descrição</span>
+                        <span>Quantidade</span>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                </div>
+                <!-- <table>
+                    <thead>
+                        <th>Codigo</th>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Estoque</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>035100019</td>
+                            <td>Chapa de Aço Galvanizado 3mt 100x200x300</td>
+                            <td>12</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>035300205</td>
+                            <td>Cobertura do Proj. Ozônio MDC Completo</td>
+                            <td>28</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
         </div>
     </div>
 
