@@ -67,7 +67,11 @@
     border: 1px solid #ccc;
     background: #fff;
     margin-bottom: 5px;
-    padding: 10px;
+    padding: 20px;
+}
+
+.item strong {
+    font-weight: 600;
 }
 
 .item .item-detail1 {
@@ -91,4 +95,26 @@
 
 .item .item-right span {
     margin-bottom: 5px;
+}
+
+.item .item-detail2 table {
+    width: 60%;
+}
+
+.item .item-detail2 table thead {
+    text-align: left;
+    background: #d1d1d1;
+    color: #212121;
+}
+
+.item .item-detail2 table thead th {
+    font-weight: 500;
+}
+
+.item .item-detail2 table tbody tr td {
+    font-weight: 300;
+}
+
+.item .item-detail2 table tbody tr:nth-child(even) {
+    background: #ececec;
 }

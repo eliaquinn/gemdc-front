@@ -25,6 +25,17 @@ body {
     background: var(--bg-default);
 }
 
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #797979;
+    border-radius: 3px;
+}
+
 .side-bar {
     background: linear-gradient(135deg, var(--bg-light), var(--clr-deep));
     height: 100vh;
@@ -53,9 +64,12 @@ body {
 }
 
 .side-bar nav ul li:nth-child(2) ul li {
-    color: #fff;
+    font-size: 12pt;
     font-weight: 200;
-    transition: .3s ease;
+}
+
+.side-bar nav ul li:nth-child(2) ul li:hover {
+    margin-left: 5px;
 }
 
 .side-bar nav ul li {
@@ -141,7 +155,39 @@ body {
     background: var(--bg-default);
 }
 
-/* COMEÇA DAQUI */
+/* TERMINA DAQUI */
+
+/* BUTÕES ESCRITORIO */
+
+.btn-office {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 60px;
+}
+
+.btn-office ul {
+    list-style: none;
+}
+
+.btn-office ul li {
+    background: #4b4a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px;
+    border-radius: 25px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.btn-office ul li i {
+    font-size: 18pt;
+    color: #fff;
+}
+
+/* TERMINA DAQUI */
 
 .container {
     width: calc(100vw - 250px);
