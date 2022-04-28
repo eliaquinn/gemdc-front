@@ -1,6 +1,13 @@
 const btnLogin = document.querySelector('.btn-login')
 const menuUser = document.querySelector('.menu-user')
 
+const bgMaterials = document.querySelector('.add-materials')
+const boxAddItem = document.querySelector('.add-item')
+const btnAdd = document.getElementById('add-item')
+
+const inputsClean = document.querySelectorAll('.clean')
+const btnClean = document.querySelector('.btn-clean')
+
 class Client {
     constructor () {
         this.elementArr = []
@@ -10,10 +17,30 @@ class Client {
         this.elementArr.push(data)
     }
 
-    userMenu () {
-        let btnUser = this.elementArr.filter(item => item.classList.contains('btn-login'))
+    showBoxAddItem () {
+        bgMaterials.style.display = 'flex'
 
+        bgMaterials.addEventListener('click', e => {
+            if(e.target.classList.contains('add-materials') || e.target.classList.contains('bx-x')) {
+                bgMaterials.style.display = 'none'
+            }
+        })
+    }
+
+    cleanInputs () {
+        inputsClean.forEach(data => data.value = '')
+    }
+
+    appInit () {
         document.addEventListener('click', this.menuList.bind(this))
+
+        if(this.elementArr[1] !== null) {
+            this.elementArr[1].addEventListener('click', this.showBoxAddItem)
+        }
+
+        if(this.elementArr[2] !== null) {
+            this.elementArr[2].addEventListener('click', this.cleanInputs)
+        }
     }
 
     menuList (event) {
@@ -43,29 +70,8 @@ class Client {
 
 const user = new Client()
 
-user.insertElement(btnLogin)
+user.insertElement(btnLogin) //0
+user.insertElement(btnAdd) //1
+user.insertElement(btnClean) //2
 
-user.userMenu()
-
-/*
-    {
-            if(item.classList.value == 'btn-login') {
-                item.onclick = () => {
-                    menuUser.innerHTML = ''
-                    if(menuUser.style.display === 'block') {
-                        menuUser.style.display = ''
-                        return
-                    }
-                    menuUser.style.display = 'block'
-                    menuUser.innerHTML = `<span>Brian Costa</span>`
-                    let ul = document.createElement('ul')
-                    ul.innerHTML = `
-                        <li>Perfil</li>
-                        <li>Configurações</li>
-                        <li><a href="../../index.html">Sair</a></li>
-                    `
-                    menuUser.appendChild(ul)
-                }
-            }
-        }
-*/
+user.appInit()

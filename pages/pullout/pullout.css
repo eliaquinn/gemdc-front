@@ -1,3 +1,119 @@
+.add-materials {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+}
+
+.add-materials .add-item {
+    background: #fff;
+    padding: 20px;
+    width: 60%;
+    height: 80vh;
+    border-radius: 5px;
+}
+
+.add-materials .add-item header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+.add-materials .add-item header h2 {
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.add-materials .add-item header i {
+    font-size: 20pt;
+    background: #212121;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.add-materials .add-item .header-search {
+    display: flex;
+    align-items: flex-end;
+}
+
+.add-materials .add-item .header-search button {
+    height: 35px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: 300;
+    margin-right: 5px;
+    background: #fff;
+}
+
+.add-materials .add-item .header-search button:hover {
+    background: #90cbff;
+    outline: 1px solid var(--bg-light);
+}
+
+.add-materials .add-item .header-search div:nth-child(2) {
+    width: 35vw;
+    margin: 0 5px;
+}
+
+.add-materials .add-item .header-search div label {
+    display: block;
+}
+
+.add-materials .add-item .header-search div input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14pt;
+    outline: none;
+}
+
+.add-materials .add-item .header-search div input:focus {
+    outline: 1px solid var(--bg-light);
+}
+
+.add-materials .add-item .item-list-add {
+    margin-top: 10px;
+}
+
+.add-materials .add-item .item-list-add table {
+    width: 100%;
+}
+
+.add-materials .add-item .item-list-add table thead {
+    background: #989898;
+    color: #333;
+}
+
+.add-materials .add-item .item-list-add table tbody tr:nth-child(even) {
+    background: #e3e3e3;
+}
+
+.add-materials .add-item .item-list-add table tbody tr td:nth-child(3) {
+    width: 80px;
+}
+
+.add-materials .add-item .item-list-add table tbody tr td:nth-child(3) input {
+    width: 70px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14pt;
+    text-align: center;
+    outline: none;
+}
+
 .status-pullout-general {
     height: calc(100vh - 110px);
     margin: 0 80px;
