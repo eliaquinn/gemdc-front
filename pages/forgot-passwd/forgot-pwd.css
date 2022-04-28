@@ -2,7 +2,7 @@ body {
     background: var(--bg-default);
 }
 
-.login {
+.signup {
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -13,21 +13,21 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, .123);
 }
 
-.login h2 {
+.signup h2 {
     text-align: center;
     margin-bottom: 10px;
     font-size: 20pt;
     font-weight: 500;
 }
 
-.login h3 {
+.signup h3 {
     text-align: center;
     margin-bottom: 5px;
     font-weight: 300;
     font-size: 16pt;
 }
 
-.login .message-login {
+.signup .message-login {
     display: none;
     background: var(--clr-error);
     padding: 5px;
@@ -38,17 +38,17 @@ body {
     font-weight: 300;
 }
 
-.login .show { /* MENSSAGEM DE ERRO DO LOGIN */
+.signup .show { /* MENSSAGEM DE ERRO DO LOGIN */
     display: block;
 }
 
-.login span {
+.signup span {
     font-weight: 500;
     margin-bottom: 5px;
     font-size: 13pt;
 }
 
-.login input {
+.signup input {
     margin-bottom: 10px;
     height: 40px;
     outline: none;
@@ -58,40 +58,11 @@ body {
     border-radius: 5px;
 }
 
-.login input:focus {
+.signup input:focus {
     border: 1px solid var(--bg-light);
 }
 
-.login .forgot-pwd {
-    margin-top: -30px;
-    font-size: 11pt;
-}
-
-.login #vision-passwd {
-    color: #8a8a8a;
-    font-size: 18pt;
-    position: relative;
-    left: 325px;
-    width: 25px;
-    top: -40px;
-    cursor: pointer;
-}
-
-.login .forgot-pwd {
-    text-align: right;
-}
-
-.login .forgot-pwd a {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--clr-deep2);
-}
-
-.login .forgot-pwd a:hover {
-    text-decoration: underline;
-}
-
-.login button {
+.signup button {
     background: var(--bg-light);
     height: 40px;
     border-radius: 5px;
@@ -103,7 +74,22 @@ body {
     cursor: pointer;
 }
 
-.login button:active {
+.signup button:active {
     background: var(--clr-deep);
     border: 1px solid var(--bg-light);
+}
+
+.signup .login-user {
+    margin-top: 20px;
+    font-size: 11pt;
+}
+
+.signup .login-user a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-deep2);
+}
+
+.signup .login-user a:hover {
+    text-decoration: underline;
 }

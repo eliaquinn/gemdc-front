@@ -128,4 +128,3 @@ user.insertElement(btnClean) //2
 user.insertElement(sideBar) //3
 
 user.appInit()
-console.log(user)
